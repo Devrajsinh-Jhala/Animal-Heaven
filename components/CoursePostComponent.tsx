@@ -10,7 +10,7 @@ type Props = {
 
 const CoursePostComponent = ({ posts }: Props) => {
   return (
-    <section className="px-4">
+    <section className="">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-y-16 pb-24">
         {/* Posts */}
         {posts.map((post) => (

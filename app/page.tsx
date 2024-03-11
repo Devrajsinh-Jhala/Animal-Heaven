@@ -8,7 +8,7 @@ export default async function Home() {
   return (
     <section className="flex max-w-6xl mx-auto flex-col items-center justify-center bg-background overflow-y-auto">
       <div className="flex px-10 flex-col items-center justify-center space-y-5 h-[90vh]">
-        <h1 className="text-3xl font-extrabold tracking-tight lg:text-6xl">
+        <h1 className="text-3xl font-extrabold tracking-tight text-center lg:text-6xl">
           Welcome to Animal Heaven
         </h1>
         <p className="max-w-2xl mx-auto text-center">
