@@ -6,6 +6,12 @@ import { unstable_noStore as noStore } from "next/cache";
 
 type Props = {};
 
+export const metadata = {
+  title: "Courses | Animal Haven",
+  description:
+    "This is the courses section of Animal Haven where you can access all our premium courses.",
+};
+
 async function getData(userId: string) {
   noStore();
   const data = await prisma.subscription.findUnique({
