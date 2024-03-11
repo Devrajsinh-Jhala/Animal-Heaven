@@ -2,11 +2,14 @@ import { groq } from "next-sanity";
 import React from "react";
 import { sanityClient } from "@/sanity";
 import BlogPostComponent from "@/components/BlogPostComponent";
+import { unstable_noStore as noStore } from "next/cache";
 
 type Props = {};
 export const metadata = {
   title: "Blog | Animal Haven",
 };
+
+noStore();
 const allPostsQuery = groq`
 *[_type == 'post']{
   ...,
