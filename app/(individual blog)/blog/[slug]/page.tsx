@@ -20,7 +20,7 @@ type Props = {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const slug = params.slug;
   const query = groq`
-  *[_type == "blog" && slug.current == $slug][0]{
+  *[_type == "post" && slug.current == $slug][0]{
     title,
     
   }
